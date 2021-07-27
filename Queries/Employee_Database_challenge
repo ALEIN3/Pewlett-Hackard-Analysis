@@ -1,0 +1,35 @@
+-- Retrieve the emp_no, first_name, and last_name columns from the Employees table
+select emp_no, first_name, last_name 
+from employees;
+
+-- Retrieve the title, from_date, and to_date columns from the Titles table.
+select title, from_date, to_date
+from titles;
+
+select e.emp_no, e.first_name, e.last_name, e.birth_date, ti.title, ti.from_date, ti.to_date
+into retirement_titles
+from employees as e
+join titles as ti on (e.emp_no=ti.emp_no)
+where (e.birth_date between '1952-01-01' and '1955-12-31')
+
+
+-- Use Distinct with Orderby to remove duplicate rows
+SELECT DISTINCT ON (emp_no) emp_no,
+first_name,
+last_name,
+title
+INTO unique_titles
+FROM retirement_titles
+ORDER BY emp_no, to_date DESC;
+
+select * from unique_titles
+
+-- the number of employees by their most recent job title who are about to retire.
+select title, count(*)
+into retiring_titles
+from unique_titles
+group by title
+order by count(*) desc
+
+
+
