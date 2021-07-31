@@ -5,15 +5,28 @@ We received several CSV files containing the data of the employees of a company,
 The purpose of our analysis is to answer two questions, 
 •	The first one, what is the number of retiring employees per title? 
 •	Who are the employees who are eligible to participate in a mentorship program?
+
 I created an ERD showing how the primary key and foreign keys have been linked together to join tables in the right way on the right keys, and you will be able to check it by looking at the following image:
+
+The ERD of the main tables: ![](https://github.com/ALEIN3/Pewlett-Hackard-Analysis/blob/main/Resources/EmployeeDB.png)
+
+
 # Results
 ## The first question, what is the number of retiring employees per title?
-I used the employees table and the titles table. And I the (DISTINCT ON) statement remove duplicates and used count() function to get the number of people that are going to retire for each title.
+I used the employees table and the titles table. I the used (DISTINCT ON) statement to remove duplicates and used count() function to get the number of people that are going to retire for each title.
+
 You will be able to find the code and results in the images below:
+
+![](https://github.com/ALEIN3/Pewlett-Hackard-Analysis/blob/main/Resources/The%20Number%20of%20Retiring%20Employees%20by%20Title.png)
+
 We can notice the following:
+
 •	The people that are going to retired come under 7 titles
+
 •	The title with the highest number of people is Senior Engineer
+
 •	The title with the lowest number of people is the Manager
+
 •	The title with the highest count (Senior Engineer) and the second-highest count represent more than 60% of the retiring employees.
 
 ## The second question is, who are the employees eligible for the mentorship program?
