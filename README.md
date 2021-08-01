@@ -1,7 +1,8 @@
 # Pewlett-Hackard-Analysis 
 
 Click here to view the SQL query: [Employee_Database_challenge](https://github.com/ALEIN3/Pewlett-Hackard-Analysis/blob/main/Queries/Employee_Database_challenge)
-Click here to open the folder of the CSV files:[Data](https://github.com/ALEIN3/Pewlett-Hackard-Analysis/tree/main/Data)
+
+Click here to open the folder of the CSV files: [Data](https://github.com/ALEIN3/Pewlett-Hackard-Analysis/tree/main/Data)
 
 # Overview
 We received several CSV files containing the data of the employees of a company, and the provided data is about their demographics, salaries, titles, departments.
