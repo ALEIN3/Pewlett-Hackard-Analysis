@@ -1,5 +1,7 @@
 # Pewlett-Hackard-Analysis 
 
+Click here to view the SQL query: [Employee_Database_challenge](https://github.com/ALEIN3/Pewlett-Hackard-Analysis/blob/main/Queries/Employee_Database_challenge)
+
 # Overview
 We received several CSV files containing the data of the employees of a company, and the provided data is about their demographics, salaries, titles, departments.
 The purpose of our analysis is to answer two questions, 
